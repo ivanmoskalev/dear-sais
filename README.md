@@ -1,12 +1,12 @@
-# DearTemplate
+# DearSAIS
 > this library is part of [dear](https://github.com/ivanmoskalev/dear) suite
 
 ## Installation
 
-DearTemplate is distributed via Swift Package Manager.
+DearSAIS is distributed via Swift Package Manager.
 
 ```swift
-.package(url: "https://github.com/ivanmoskalev/DearTemplate.git", from: "1.0.0")
+.package(url: "https://github.com/ivanmoskalev/DearSAIS.git", from: "1.0.0")
 ```
 
 ## Contributing

@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "DearTemplate",
+    name: "DearSAIS",
     platforms: [
         .macOS(.v10_15),
         .iOS(.v15)
     ],
     products: [
-        .library(name: "DearTemplate", targets: ["DearTemplate"]),
+        .library(name: "DearSAIS", targets: ["DearSAIS"]),
     ],
     targets: [
-        .target(name: "DearTemplate"),
-        .testTarget(name: "DearTemplateUnit", dependencies: ["DearTemplate"]),
-        .testTarget(name: "DearTemplatePerformance", dependencies: ["DearTemplate"]),
+        .target(name: "DearSAIS"),
+        .testTarget(name: "DearSAISUnit", dependencies: ["DearSAIS"]),
+        .testTarget(name: "DearSAISPerformance", dependencies: ["DearSAIS"]),
     ]
 )
