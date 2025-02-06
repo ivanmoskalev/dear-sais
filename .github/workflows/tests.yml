@@ -1,0 +1,37 @@
+name: tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  unit-tests:
+    runs-on: macos-15
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: unit tests
+        run: swift test --parallel --filter Unit --enable-code-coverage
+      - name: coverage
+        uses: sersoft-gmbh/swift-coverage-action@v4.0
+      - name: codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          
+
+  performance-tests:
+    runs-on: macos-15
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: perf tests
+        run: swift test --filter Performance --enable-code-coverage -Xswiftc -O
+      - name: coverage
+        uses: sersoft-gmbh/swift-coverage-action@v4.0
+      - name: codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
