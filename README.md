@@ -1,7 +1,7 @@
 # DearSAIS
 > this library is part of [dear](https://github.com/ivanmoskalev/dear) suite
 
-Swift implementation of the SA-IS algorithm for building suffix arrays in `O(n)` (as compared to naive `O(n × log(n)`). The library exposes an API for constructing suffix arrays from either textual (String) or binary ([UInt8]) data.
+Swift implementation of the SA-IS algorithm for building suffix arrays in `O(n)` (as compared to naive `O(n × log(n)`). The library exposes an API for constructing suffix arrays from either textual (`String`) or binary (`[UInt8]`) data.
 
 Suffix arrays are mostly used in data compression, and especially for calculating binary diff patches in update systems.
 
