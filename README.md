@@ -1,4 +1,4 @@
-# DearSAIS
+# dear-sais
 > this library is part of [dear](https://github.com/ivanmoskalev/dear) suite
 
 Swift implementation of the SA-IS algorithm for building suffix arrays in `O(n)` (as compared to more usual `O(n × log(n)`). The library exposes an API for constructing suffix arrays from either textual (`String`) or binary (`[UInt8]`) data.
@@ -14,7 +14,7 @@ I wrote this library for my upcoming implementation of the bsdiff-like compressi
 DearSAIS is distributed via Swift Package Manager.
 
 ```swift
-.package(url: "https://github.com/ivanmoskalev/DearSAIS.git", from: "1.0.0")
+.package(url: "https://github.com/ivanmoskalev/dear-sais.git", from: "1.0.0")
 ```
 
 ## Contributing
